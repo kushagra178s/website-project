@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-bg-color: rgb(96, 42, 231);
+}
+body{
+    background-color: rgb(197, 88, 236);
+}
+header{
+    background-color: var(--main-bg-color);
+    /* border: 2px solid red; */
+    font-family: 'Lato', sans-serif;
+    display: flex;
+
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 150px;
+    padding: 0 22px;
+}
+nav ul{
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 23px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(241, 35, 214);
+    font-weight: bolder;
+}
+.serach{
+    display: flex;
+    align-items: center;
+}
+.serach input{
+    width: 30vw;
+    height: 25px;
+    border-radius: 5px;
+    margin:  0 15px 0 56px;
+    padding: 0 12px;
+}
+.container{
+    min-height: calc(100vh - 40px - 10vh);
+}
+.slider{
+    /* width: 100vh; */
+    margin: 12px 20vw;
+    /* align-items: center; */
+    overflow: hidden;
+}
+.card{
+    max-width: 90vw;
+    margin: 37px auto;
+}
+.card h2{
+    font-family: 'Lato', sans-serif;
+}
+.cards{
+    display: flex;
+    overflow: hidden;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px;
+}
+footer{
+    background-color: var(--main-bg-color);
+    color: yellowgreen;
+    height: 10vh;
+    width: auto;
+    font-family: 'Lato', sans-serif;
+}
